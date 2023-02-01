@@ -1,0 +1,259 @@
+/* CSS reseat */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    /* justify-content: center; */
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navigation bar: logo and image */
+#logo {
+    padding: 6px 6px;
+}
+
+#logo img {
+    height: 36px;
+    margin: 6px 6px;
+    border-radius: 25px;
+}
+
+/* navigation bar: list Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 6px 15px;
+
+}
+
+#navbar ul li a {
+    display: block;
+    border-radius: 12px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 6px 6px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+#navbar ul li a:hover {
+    /* display: block; */
+    background: rgb(29, 24, 24);
+    /* cursor: pointer; */
+}
+
+/* Home section */
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 200px;
+    height: 180px;
+    /* margin: 20px 20px; */
+
+}
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../bacground.jpg') no-repeat center center/cover;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rowdies', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+
+    font-family: 'Merriweather', serif;
+}
+
+/* utility class */
+#h-primary {
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+#h-secondary {
+    font-size: 1.7rem;
+    padding: 12px;
+    font-family: 'Rowdies', cursive;
+}
+
+.btn {
+    padding: 5px 12px;
+    margin: 18px 218px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: blue;
+
+
+}
+
+/* Services section  */
+#service {
+    display: flex;
+    margin: 15px 15px;
+
+}
+
+
+#service .box {
+    padding: 14px;
+    margin: 18px 20px;
+    margin-bottom: 20px;
+    border: 2px solid red;
+    background-color: #d4e9e9;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+
+}
+#service .box:hover {
+   cursor: pointer;
+}
+
+#service .box img {
+    height: 120px;
+}
+
+#service .box p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* client Section */
+#client-section {
+    position: relative;
+    height: 340px;
+
+}
+
+#client-section::before {
+    background: url(../background1.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.35;
+    width: 100%;
+    height: 100%;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-list {
+    padding: 18px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+.h-primary {
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contactus.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    height: 100%;
+}

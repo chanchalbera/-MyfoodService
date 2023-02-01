@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online food delivery Service in India | MyfoodService.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  media="screen and (max-width:790px)" href="css/phone.css">
+
+    <!-- font for navbar -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- font for #home h1 -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lobster&family=Rowdies&display=swap"
+        rel="stylesheet">
+
+    <!-- font for #home p -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <!-- font for service section -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.webp" alt="">
+        </div>
+        <ul>
+            <li class="navbar-list"><a href="#home">Home</a></li>
+            <li class="navbar-list"><a href="#service-container">Service</a></li>
+            <li class="navbar-list"><a href="prac_9.html">About us</a></li>
+            <li class="navbar-list"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 >Welcome to MyfoodService</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ullam unde quae eveniet libero, nam
+            praesentium illo non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam a impedit reiciendis sit eius!</p>
+        <button class="btn" onclick="toggleHide()">Order Now</button>
+    </section>
+
+    <section id="service-container">
+        <h1 id="h-primary" class="center"> Our Services </h1>
+        <div id="service">
+            <div class="box">
+                <img src="./img1.png" alt="">
+                <h2 id="h-secondary">Food Certaing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis qui debitis vero, vo. manash da s
+                    is ana Fugiat illum reprehend Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur minus, .</p>
+            </div>
+
+            <div class="box">
+                <img src="./img2.png" alt="">
+                <h2 id="h-secondary">Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore omnis amkksnnfnnkk labore nulla
+                    ab! Numquam. Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. . </p>
+
+            </div>
+            <div class="box">
+                <img src="./img3.png" alt="">
+                <h2 id="h-secondary">Food Ordering</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam delectus quis, quasi rem obcaecati
+                    placeat modi ducimus explicabo numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary">Our Clients</h1>
+        <div id="clients">
+            <div class="client-list">
+                <img src="./logo1.png" alt="Our client">
+            </div>
+            <div class="client-list">
+                <img src="./logo2.png" alt="Our client">
+            </div>
+            <div class="client-list">
+                <img src="./logo4.png" alt="Our client">
+            </div>
+            <div class="client-list">
+                <img src="./hp.png" alt="Our client">
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary ">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn">  Submit Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www. MyfoodService.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+<script>
+      function toggleHide(){
+        
+        let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'block';
+        }
+    }
+</script>
+</html>
